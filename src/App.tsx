@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import Banner from './module/ui/Banner';
+import CurriculumSection from './module/ui/Curriculmn';
 import Features from './module/ui/Feature';
 import VideoPlayback from './module/ui/VideoPlayback';
 
@@ -10,6 +11,7 @@ function App() {
       <Banner />
       <Features />
       <VideoPlayback />
+      <CurriculumSection />
     </div>
   );
 }
