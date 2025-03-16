@@ -2,19 +2,25 @@
 
 import { useState } from 'react';
 
-export default function LogisticsMenu() {
+export default function LogisticsMenu({
+  setActiveTab,
+}: {
+  setActiveTab: React.Dispatch<React.SetStateAction<string>>;
+}) {
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState(0);
 
   const menuItems = [
     { id: 'international', label: 'Международная логистика' },
-    { id: 'american', label: 'Американская логистика', count: 374 },
+    { id: 'american', label: 'Американская логистика' },
     { id: 'customs', label: 'Таможенное дело и ВЭД' },
   ];
 
-  const handleSelect = (index: number) => {
+  const handleSelect = (index: number, label: string) => {
     setSelected(index);
     setIsOpen(false);
+    setActiveTab(label);
+    console.log(label);
   };
 
   return (
@@ -48,13 +54,13 @@ export default function LogisticsMenu() {
       {/* Dropdown Menu */}
       {isOpen && (
         <div
-          className="absolute mt-2 w-[305px] bg-white rounded-lg right-0 shadow-lg z-10 py-1 max-h-60 overflow-auto"
+          className="absolute mt-2 md:w-[305px] w-[272px] bg-white rounded-lg right-0 shadow-lg z-10 py-1 max-h-60 overflow-auto"
           role="listbox"
         >
           {menuItems.map((item, index) => (
             <div
               key={item.id}
-              onClick={() => handleSelect(index)}
+              onClick={() => handleSelect(index, item.id)}
               className={`px-6 py-4 cursor-pointer transition-colors flex justify-between items-center ${
                 index === selected ? 'bg-gray-100' : 'hover:bg-gray-50'
               }`}

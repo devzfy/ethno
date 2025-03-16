@@ -55,7 +55,7 @@ export default function VideoPlayback() {
                 </p>
               </div>
             </div>
-            <div className="mt-10  xl:w-[35%] md:w-[492px] w-[90%] mx-auto xl:mx-auto md:mt-[50px] xl:mt-0 relative xl:h-[524px] h-[286px] rounded-4xl overflow-hidden flex justify-center items-center flex-col gap-y-[61px]">
+            <div className="mt-10  xl:w-[35%] md:w-[492px] w-[90%] mx-auto xl:mx-auto md:mt-[50px] xl:mt-0 relative xl:h-[524px] h-[286px] rounded-4xl overflow-hidden flex justify-center items-center flex-col gap-y-[61px] mb-[60px] md:mb-0">
               <img
                 src={BG2}
                 alt=""
