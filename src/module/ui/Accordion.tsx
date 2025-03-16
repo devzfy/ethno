@@ -52,24 +52,24 @@ export default function FAQAccordion() {
   };
 
   return (
-    <div className="xl:my-[200px] md:my-[100px]">
+    <div className="xl:my-[200px] md:my-[100px] my-[90px]">
       <div className="w-full mx-auto  container-secondary">
-        <h1 className="font-medium font-secondary text-center xl:text-[72px] xl:leading-[67px] text-[#252323] xl:max-w-[1050px] mx-auto xl:mb-[80px] md:mb-[50px] md:text-[37px] md:leading-[37px]">
+        <h1 className="font-medium text-[26px] leading-[30px] font-secondary text-center xl:text-[72px] xl:leading-[67px] text-[#252323] xl:max-w-[1050px] max-w-[300px] mx-auto xl:mb-[80px] md:mb-[50px] mb-10 md:text-[37px] md:leading-[37px]">
           Отвечаем на все ваши вопросы
         </h1>
         {faqItems.map(item => (
           <div
             key={item.id}
-            className={`xl:mb-2.5 md:mb-2 xl:rounded-[60px] md:rounded-[70px] overflow-hidden bg-white  transition-all duration-300`}
+            className={`xl:mb-2.5 md:mb-2 mb-1.5  overflow-hidden bg-white  transition-all duration-300 ${openItem === item.id ? 'xl:rounded-[50px] rounded-[28px]' : 'xl:rounded-[60px] rounded-[70px]'}`}
           >
             <button
-              className="w-full  xl:py-[16px] xl:pl-[60px] xl:pr-[18px] md:py-[6px] md:pl-[24px] md:pr-[7px] text-left flex justify-between items-center hover:bg-[#F4D902] cursor-pointer"
+              className="w-full  xl:py-[16px] xl:pl-[60px] xl:pr-[18px] py-[6px] pl-[24px] pr-[7px] text-left flex justify-between items-center hover:bg-[#F4D902] cursor-pointer"
               onClick={() => toggleItem(item.id)}
             >
               <span className="font-semibold xl:text-2xl md:text-sm font-primary text-[#252323]">
                 {item.question}
               </span>
-              <span className="xl:w-[73px] xl:h-[73px] md:w-[47px] md:h-[47px] flex justify-center items-center rounded-full bg-[#F2F2F2]">
+              <span className="xl:min-w-[73px] xl:min-h-[73px] min-w-[47px] min-h-[47px] flex justify-center items-center rounded-full bg-[#F2F2F2]">
                 <svg
                   className={`w-5 h-5 transition-transform duration-300 ${
                     openItem === item.id ? 'transform rotate-180' : ''
@@ -91,12 +91,12 @@ export default function FAQAccordion() {
             <div
               className={`overflow-hidden transition-all  duration-300 ${
                 openItem === item.id
-                  ? 'max-h-96 opacity-100 xl:mt-5 xl:pl-[60px] xl:pb-10'
+                  ? 'max-h-96 opacity-100 xl:mt-5 xl:pl-[60px] xl:pb-10 pl-[24px] pb-[30px]'
                   : 'max-h-0 opacity-0'
               }`}
             >
               <div className="">
-                <p className="text-[#252323] xl:text-[22px] xl:leading-[31px] xl:max-w-[1027px] font-primary">
+                <p className="text-[#252323] md:text-[12px] xl:text-[22px] xl:leading-[31px] xl:max-w-[1027px] md:max-w-[305px] font-primary">
                   {item.answer}
                 </p>
               </div>
