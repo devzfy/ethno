@@ -39,7 +39,9 @@ export default function LogisticsMenu({
         </h2>
         <div className="w-[42px] h-[42px] flex justify-center rounded-[6px] items-center bg-[#F1F1F199]">
           <svg
-            className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+            className={`w-4 h-4 transition-transform ${
+              isOpen ? 'rotate-180' : ''
+            }`}
             width="15"
             height="7"
             viewBox="0 0 15 7"
@@ -54,7 +56,7 @@ export default function LogisticsMenu({
       {/* Dropdown Menu */}
       {isOpen && (
         <div
-          className="absolute mt-2 md:w-[305px] w-[272px] bg-white rounded-lg right-0 shadow-lg z-10 py-1 max-h-60 overflow-auto"
+          className="absolute  mt-2 md:w-[305px] w-[272px] bg-white rounded-lg right-0 shadow-lg z-20 py-1 max-h-60 overflow-auto"
           role="listbox"
         >
           {menuItems.map((item, index) => (

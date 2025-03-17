@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 export default function FAQAccordion() {
-  const [openItem, setOpenItem] = useState(1);
+  const [openItem, setOpenItem] = useState();
 
   // FAQ data
   const faqItems = [
@@ -60,7 +60,11 @@ export default function FAQAccordion() {
         {faqItems.map(item => (
           <div
             key={item.id}
-            className={`xl:mb-2.5 md:mb-2 mb-1.5  overflow-hidden bg-white  transition-all duration-300 ${openItem === item.id ? 'xl:rounded-[50px] rounded-[28px]' : 'xl:rounded-[60px] rounded-[70px]'}`}
+            className={`xl:mb-2.5 md:mb-2 mb-1.5  overflow-hidden bg-white  transition-all duration-300 ${
+              openItem === item.id
+                ? 'xl:rounded-[50px] rounded-[28px]'
+                : 'xl:rounded-[60px] rounded-[70px]'
+            }`}
           >
             <button
               className="w-full  xl:py-[16px] xl:pl-[60px] xl:pr-[18px] py-[6px] pl-[24px] pr-[7px] text-left flex justify-between items-center hover:bg-[#F4D902] cursor-pointer"

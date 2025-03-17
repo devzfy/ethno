@@ -15,9 +15,12 @@ export default function CareerBanner() {
           </h2>
 
           <div className="flex flex-col md:flex-row md:gap-2.5">
-            <button className="bg-[#F4D902] font-primary mb-2.5 md:mb-0 text-[#252323] font-bold  text-sm py-[18px] px-[46px] rounded-[50px] xl:text-[23px] xl:py-[28px] xl:px-[51px] ">
+            <a
+              href="#contact"
+              className="inline-block bg-[#F4D902] font-primary mb-2.5 md:mb-0 text-[#252323] font-bold  text-sm py-[18px] px-[46px] rounded-[50px] xl:text-[23px] xl:py-[28px] xl:px-[51px] "
+            >
               Записаться на пробное занятие!
-            </button>
+            </a>
 
             <button className="bg-[#fff] text-[#252323] font-primary font-bold  text-sm py-[18px] px-[46px] rounded-[50px] xl:text-[23px] xl:py-[28px] xl:px-[51px] ">
               Получить бесплатную консультацию

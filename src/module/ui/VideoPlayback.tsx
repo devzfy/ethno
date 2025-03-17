@@ -10,11 +10,7 @@ export default function VideoPlayback() {
             Посмотрите видео, в котором рассказываем про реальные зарплаты
             логистов и процесс работы на фрилансе
           </p>
-          <img
-            src={Laptop}
-            alt=""
-            className="xl:h-[693px] xl:ml-20 md:ml-10 ml-5"
-          />
+          <img src={Laptop} alt="" className="xl:h-[693px] xl:ml-20 md:ml-10" />
         </div>
         <div className="bg-white xl:rounded-[50px] md:rounded-[22px] rounded-[12px] xl:px-[119px] md:px-5 xl:pb-[100px] md:pb-[70px] xl:pt-[409px] md:pt-[295px] pt-[170px] xl:-mt-80 md:-mt-52 -mt-28">
           <h1 className="xl:text-[80px] md:text-[37px] text-[28px] leading-[30px] max-w-full md:leading-[30px] xl:leading-[67px] text-center mx-auto font-secondary font-medium xl:max-w-[1290px] md:max-w-[650px] ">
@@ -66,9 +62,12 @@ export default function VideoPlayback() {
                 alt=""
                 className="relative  w-[226px] h-[111px] xl:w-auto xl:h-auto"
               />
-              <button className="xl:px-[60px] xl:py-[28px] px-[30px] py-[18px]  rounded-[50px] relative bg-[#F4D902] xl:text-[23px] text-[12px] font-bold font-thirty">
+              <a
+                href="#gallery"
+                className="inline-block xl:px-[60px] xl:py-[28px] px-[30px] py-[18px]  rounded-[50px] relative bg-[#F4D902] xl:text-[23px] text-[12px] font-bold font-thirty"
+              >
                 истории студентов
-              </button>
+              </a>
             </div>
           </div>
         </div>

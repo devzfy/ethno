@@ -57,9 +57,12 @@ export default function Footer() {
           Условия использования <br /> Согласие на обработку персональных данных
         </p>
         <div className="   flex-col gap-5 hidden xl:flex">
-          <button className="text-[#252323] rounded-[50px] text-[23px] py-7 px-[70px]  font-bold bg-[#F4D902]">
+          <a
+            href="#gallery"
+            className="inline-block text-[#252323] rounded-[50px] text-[23px] py-7 px-[70px]  font-bold bg-[#F4D902]"
+          >
             Записаться на пробное занятие!
-          </button>
+          </a>
           <button className="text-[#252323] rounded-[50px] text-[23px] px-[70px] py-7 font-bold  bg-[#F2F2F2]">
             Получить консультацию
           </button>

@@ -15,9 +15,12 @@ export default function ConsultationRequest() {
               Оставьте заявку на консультацию
             </h2>
 
-            <button className=" bg-[#F4D902] text-[#252323] xl:text-2xl text-[12px] font-bold xl:px-[60px] xl:py-[28px] px-[30px] py-[18px] rounded-[50px]">
+            <a
+              href="#contact"
+              className="inline-block  bg-[#F4D902] text-[#252323] xl:text-2xl text-[12px] font-bold xl:px-[60px] xl:py-[28px] px-[30px] py-[18px] rounded-[50px]"
+            >
               ЗАДАТЬ ВОПРОС
-            </button>
+            </a>
           </div>
 
           {/* Right side - Chat bubble and logo */}

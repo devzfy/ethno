@@ -23,9 +23,12 @@ export default function Banner() {
               выйдете на стабильный доход от 500 долларов и сможете грамотно
               управлять потоками и маршрутами.
             </p>
-            <button className="text-sm bg-[#F4D902] text-black font-bold py-[18px] px-[30px] xl:py-[28px] xl:px-[60px]  rounded-full md:text-lg  relative md:mt-14 mt-12">
+            <a
+              href="#contact"
+              className="inline-block text-sm bg-[#F4D902] text-black font-bold py-[18px] px-[30px] xl:py-[28px] xl:px-[60px]  rounded-full md:text-lg  relative md:mt-14 mt-12"
+            >
               ХОЧУ НА КУРС
-            </button>
+            </a>
           </div>
           <div className="absolute right-0 xl:top-[92px] md:-bottom-12 xl:-bottom-auto md:top-auto">
             <img

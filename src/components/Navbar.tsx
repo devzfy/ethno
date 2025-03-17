@@ -34,7 +34,7 @@ export default function Navbar() {
             +998887075888
           </a>
           <a
-            href="#"
+            href="#contact"
             className="bg-[#F4D902] hidden md:block  text-black font-bold xl:py-[18px] xl:px-[30px] md:py-2.5 md:px-5 rounded-[50px] text-lg"
           >
             ХОЧУ НА КУРС
@@ -111,7 +111,10 @@ function NavLinks() {
       <a href="#" className="text-white  xl:text-lg text-[16px] font-semibold">
         FAQ
       </a>
-      <a href="#" className="text-white  xl:text-lg  text-[16px] font-semibold">
+      <a
+        href="#contact"
+        className="text-white  xl:text-lg  text-[16px] font-semibold"
+      >
         Контакты
       </a>
     </>

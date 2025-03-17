@@ -2,7 +2,10 @@ import BG5 from '../../assets/bg5.png';
 import Vector from '../../assets/Vector.png';
 export default function Gallery() {
   return (
-    <div className="relative rounded-[12px] md:rounded-[18px] border xl:rounded-[30px] overflow-hidden xl:py-[100px] md:py-10  pb-[60px]  pt-10">
+    <div
+      id="gallery"
+      className="relative rounded-[12px] md:rounded-[18px] border xl:rounded-[30px] overflow-hidden xl:py-[100px] md:py-10  pb-[60px]  pt-10"
+    >
       <img
         src={BG5}
         className="absolute w-full h-full object-cover top-0 left-0"

@@ -27,7 +27,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="w-full  relative overflow-hidden">
+    <div className="w-full  relative overflow-hidden" id="contact">
       <img
         src={FormBg}
         alt=""
