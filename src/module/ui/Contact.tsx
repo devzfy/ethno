@@ -1,29 +1,22 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
+import { useForm } from 'react-hook-form';
 import FormBg from '../../assets/form.png';
-import { useState } from 'react';
+import { FormType } from '../types/FormType';
+import { formatPhoneNumber } from '../libs/formatPhone';
+import { useSendRequest } from '../hooks/useSendRequest';
 
 export default function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    comment: '',
+  const { isPending, mutateAsync } = useSendRequest();
+  const form = useForm<FormType>({
+    defaultValues: {
+      phone: '',
+      fullName: '',
+      comment: '',
+    },
   });
 
-  const handleChange = (e: any) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form after submission
-    setFormData({ name: '', phone: '', comment: '' });
+  const handleSubmit = async (values: FormType) => {
+    await mutateAsync(values);
   };
 
   return (
@@ -48,17 +41,18 @@ export default function ContactForm() {
 
           {/* Right side - Form */}
           <div className="w-full xl:w-[612px] md:w-[424px] mx-auto xl:mx-0">
-            <form onSubmit={handleSubmit} className="space-y-2.5">
+            <form
+              onSubmit={form.handleSubmit(handleSubmit)}
+              className="space-y-2.5"
+            >
               {/* Name field */}
               <div>
                 <input
                   type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
                   placeholder="ФИО"
                   className="w-full xl:text-[18px] leading-[22px] text-[16px] xl:px-10 px-5 xl:py-6 py-4 bg-[#CCCCCC4D] font-primary text-white font-semibold placeholder-[#CBCBCB] rounded-[16px] focus:outline-none focus:ring-2 focus:ring-[#F4D902]"
                   required
+                  {...form.register('fullName')}
                 />
               </div>
 
@@ -66,21 +60,21 @@ export default function ContactForm() {
               <div>
                 <input
                   type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="+998 (--) --- -- --"
+                  placeholder="Телефон"
                   className="w-full xl:text-[18px] leading-[22px] text-[16px] xl:px-10 px-5 xl:py-6 py-4 bg-[#CCCCCC4D] font-primary text-white font-semibold placeholder-[#CBCBCB] rounded-[16px] focus:outline-none focus:ring-2 focus:ring-[#F4D902]"
-                  required
+                  onChange={e =>
+                    form.setValue('phone', formatPhoneNumber(e.target.value), {
+                      shouldValidate: true,
+                    })
+                  }
+                  value={form.watch('phone') || ''}
                 />
               </div>
 
               {/* Comment field */}
               <div>
                 <textarea
-                  name="comment"
-                  value={formData.comment}
-                  onChange={handleChange}
+                  {...form.register('comment')}
                   placeholder="Комментарий"
                   rows={4}
                   className="xl:h-[140px] h-[106px] w-full xl:text-[18px] leading-[22px] text-[16px] xl:px-10 px-5 xl:py-6 py-4 bg-[#CCCCCC4D] font-primary text-white font-semibold placeholder-[#CBCBCB] rounded-[16px] focus:outline-none focus:ring-2 focus:ring-[#F4D902]"
@@ -91,9 +85,10 @@ export default function ContactForm() {
               <div className="xl:mt-[50px] mt-10">
                 <button
                   type="submit"
+                  disabled={isPending}
                   className="w-full md:py-[17px] text-[15px]  bg-[#F4D902]  text-[#252323] font-bold font-primary py-[28px]  rounded-[50px] transition-colors duration-300"
                 >
-                  Отправить
+                  {isPending ? 'Загрузка...' : 'Отправить'}
                 </button>
               </div>
             </form>

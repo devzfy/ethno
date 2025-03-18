@@ -19,7 +19,7 @@ export default function CurriculumSection() {
   console.log(filterData);
 
   return (
-    <div className="xl:mt-[160px] md:mt-[110px] mt-[90px]">
+    <div className="xl:mt-[160px] md:mt-[110px] mt-[90px]" id="program">
       <div className="w-full flex justify-center">
         <span className="py-[14px] px-[26px] text-sm  font-bold uppercase bg-white rounded-[30px]">
           Программа курсов
@@ -42,7 +42,11 @@ export default function CurriculumSection() {
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
                 className={`px-[68px] py-[34px] text-[21px] text-[#141414] font-primary font-bold rounded-[30px] transition-all
-                ${activeTab === tab.id ? 'bg-[#F4D902] text-black' : 'bg-[#F1F1F1] text-gray-800 hover:bg-gray-300'}`}
+                ${
+                  activeTab === tab.id
+                    ? 'bg-[#F4D902] text-black'
+                    : 'bg-[#F1F1F1] text-gray-800 hover:bg-gray-300'
+                }`}
               >
                 {tab.title}
               </button>

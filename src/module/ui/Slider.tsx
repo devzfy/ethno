@@ -24,6 +24,18 @@ export default function InfiniteImageMarquee() {
 
   return (
     <div className="w-full overflow-hidden md:mb-[150px] mb-[80px]">
+      <div className="mb-[50px] xl:mb-20">
+        <div className="container-secondary relative">
+          <h1 className="text-[#252323] xl:text-[72px] md:text-[37px] md:leading-[34px] md:max-w-[574px] xl:leading-[67px] font-secondary text-center xl:max-w-[1500px] mx-auto xl:mt-[50px] md:mt-[40px] xl:mb-10 md:mb-[30px] mb-5 mt-10 text-[26px] leading-[30px]">
+            Доверие, подкрепленное знаниями
+          </h1>
+          <p className="text-[#252323] font-primary text-sm xl:text-xl md:text-sm text-center xl:max-w-[1088px] md:max-w-[574px] font-semibold mx-auto">
+            Наши сертификаты подтверждают качество обучения, а дипломы
+            преподавателей — их экспертность. Учитесь у лучших и получайте
+            признанный результат
+          </p>
+        </div>
+      </div>
       <div className="relative">
         <div className="flex whitespace-nowrap">
           <Marquee>

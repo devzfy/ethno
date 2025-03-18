@@ -58,7 +58,7 @@ export default function Footer() {
         </p>
         <div className="   flex-col gap-5 hidden xl:flex">
           <a
-            href="#gallery"
+            href="#contact"
             className="inline-block text-[#252323] rounded-[50px] text-[23px] py-7 px-[70px]  font-bold bg-[#F4D902]"
           >
             Записаться на пробное занятие!

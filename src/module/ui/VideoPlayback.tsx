@@ -12,7 +12,10 @@ export default function VideoPlayback() {
           </p>
           <img src={Laptop} alt="" className="xl:h-[693px] xl:ml-20 md:ml-10" />
         </div>
-        <div className="bg-white xl:rounded-[50px] md:rounded-[22px] rounded-[12px] xl:px-[119px] md:px-5 xl:pb-[100px] md:pb-[70px] xl:pt-[409px] md:pt-[295px] pt-[170px] xl:-mt-80 md:-mt-52 -mt-28">
+        <div
+          id="student"
+          className="bg-white xl:rounded-[50px] md:rounded-[22px] rounded-[12px] xl:px-[119px] md:px-5 xl:pb-[100px] md:pb-[70px] xl:pt-[409px] md:pt-[295px] pt-[170px] xl:-mt-80 md:-mt-52 -mt-28"
+        >
           <h1 className="xl:text-[80px] md:text-[37px] text-[28px] leading-[30px] max-w-full md:leading-[30px] xl:leading-[67px] text-center mx-auto font-secondary font-medium xl:max-w-[1290px] md:max-w-[650px] ">
             Более 2000 студентов прошли наши курсы и стали логистами
           </h1>

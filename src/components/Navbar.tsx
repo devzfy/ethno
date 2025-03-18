@@ -99,16 +99,28 @@ function NavLinks() {
       >
         О нас
       </a>
-      <a href="#" className="text-white  xl:text-lg text-[16px] font-semibold">
+      <a
+        href="#student"
+        className="text-white  xl:text-lg text-[16px] font-semibold"
+      >
         Студенты
       </a>
-      <a href="#" className="text-white  xl:text-lg text-[16px] font-semibold">
+      <a
+        href="#program"
+        className="text-white  xl:text-lg text-[16px] font-semibold"
+      >
         Программа
       </a>
-      <a href="#" className="text-white  xl:text-lg text-[16px] font-semibold">
+      <a
+        href="#gallery"
+        className="text-white  xl:text-lg text-[16px] font-semibold"
+      >
         Отзывы
       </a>
-      <a href="#" className="text-white  xl:text-lg text-[16px] font-semibold">
+      <a
+        href="#faq"
+        className="text-white  xl:text-lg text-[16px] font-semibold"
+      >
         FAQ
       </a>
       <a

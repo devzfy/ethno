@@ -52,7 +52,7 @@ export default function FAQAccordion() {
   };
 
   return (
-    <div className="xl:my-[200px] md:my-[100px] my-[90px]">
+    <div className="xl:my-[200px] md:my-[100px] my-[90px]" id="faq">
       <div className="w-full mx-auto  container-secondary">
         <h1 className="font-medium text-[26px] leading-[30px] font-secondary text-center xl:text-[72px] xl:leading-[67px] text-[#252323] xl:max-w-[1050px] max-w-[300px] mx-auto xl:mb-[80px] md:mb-[50px] mb-10 md:text-[37px] md:leading-[37px]">
           Отвечаем на все ваши вопросы
