@@ -26,19 +26,21 @@ function App() {
   return (
     <div className="">
       <Navbar />
-      <Banner />
-      <Features />
-      <VideoPlayback />
-      <ConsultationRequest />
-      <CurriculumSection />
-      <CareerBanner setShowModal={setShowModal} />
-      <Gallery />
-      <FAQAccordion />
-      <InfiniteImageMarquee />
-      <ContactForm />
-      <ContactMap />
-      <Footer />
-      <QuizModal showModal={showModal} setShowModal={setShowModal} />
+      <div>
+        <Banner />
+        <Features />
+        <VideoPlayback />
+        <ConsultationRequest />
+        <CurriculumSection />
+        <CareerBanner setShowModal={setShowModal} />
+        <Gallery />
+        <FAQAccordion />
+        <InfiniteImageMarquee />
+        <ContactForm />
+        <ContactMap />
+        <Footer />
+        <QuizModal showModal={showModal} setShowModal={setShowModal} />
+      </div>
     </div>
   );
 }

@@ -14,7 +14,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="bg-[#232323] xl:py-4 py-2.5  sticky top-0 z-40 w-full">
+    <div className="bg-[#232323] xl:py-4 py-2.5 sticky top-0 z-40 w-full">
       <div className="container-secondary mx-auto px-4 flex justify-between items-center">
         <div className="flex gap-[131px] items-center">
           <img src={Logo} alt="" width={119} height={62} />

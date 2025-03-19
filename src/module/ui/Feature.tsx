@@ -33,7 +33,7 @@ export default function Features() {
 
 function FeatureCard({ title }: { title: string }) {
   return (
-    <div className="bg-[#141414] xl:rounded-4xl md:rounded-[18px] rounded-[14px] py-9 xl:py-14 flex justify-center items-center">
+    <div className="bg-[#141414] xl:rounded-4xl md:rounded-[18px] rounded-[14px] py-9 xl:py-14 flex justify-center items-center px-5">
       <h3 className="xl:text-[21px] bold text-sm text-white text-center">
         {title}
       </h3>

@@ -2,7 +2,7 @@ import BG from '../../assets/mainbg.png';
 import HeroBg from '../../assets/hero-bg.png';
 export default function Banner() {
   return (
-    <section className="relative  md:h-[949px] h-[811px] rounded-b-[14px] rounded-bl-[14px] xl:rounded-b-[30px] xl:rounded-bl-[30px] md:rounded-b-[18px] md:rounded-bl-[18px] overflow-hidden">
+    <section className="relative   md:h-[949px] h-[811px] rounded-b-[14px] rounded-bl-[14px] xl:rounded-b-[30px] xl:rounded-bl-[30px] md:rounded-b-[18px] md:rounded-bl-[18px] overflow-hidden">
       <div className="absolute w-full ">
         <img src={BG} alt="" width="100%" className="md:h-[949px] h-[811px]" />
       </div>

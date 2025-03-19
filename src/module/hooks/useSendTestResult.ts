@@ -10,25 +10,29 @@ export const useSendTestResults = () => {
       let message = values
         .map(item => {
           const answerKey = Object.keys(item).find(
-            key => key.startsWith('a') && !key.includes('5')
+            key =>
+              key.startsWith('a') &&
+              !key.includes('name') &&
+              !key.includes('phone')
           );
           const questionKey = Object.keys(item).find(key =>
             key.startsWith('q')
           );
 
           return questionKey && answerKey
-            ? `*${item[questionKey]}*\n${item[answerKey]}`
+            ? `❓ *${item[questionKey]}*\n✅ ${item[answerKey]}`
             : null;
         })
         .filter(Boolean)
         .join('\n\n');
 
-      const contact = values.find(obj => obj.a5_name && obj.a5_phone);
+      // Adding Contact Information
+      const contact = values.find(obj => obj.a6_name && obj.a6_phone);
       if (contact) {
-        message += `\n\n*Контакт:*\nИмя: ${contact.a5_name}\nТелефон: ${contact.a5_phone}`;
+        message += `\n\n👨‍💼 *Пользователь:* ${contact.a6_name}\n☎️ *Телефон:* ${contact.a6_phone}`;
       }
 
-      return axios.post(
+      return await axios.post(
         `https://api.telegram.org/bot7864483318:AAFJp5CUf1jlu1nA7n_r0dUAhhhoOh9h174/sendMessage`, // Replace with your actual bot token
         {
           chat_id: '@logisticacadem', // Replace with your actual channel username

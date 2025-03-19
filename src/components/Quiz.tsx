@@ -39,12 +39,24 @@ export default function QuizComponent({ onClose }: Props) {
     },
     {
       id: 4,
+      title: 'Какой курс вас интересует ?',
+      options: [
+        'Международная логистика',
+        'Американская логистика',
+        'Таможенное дело и ВЭД',
+        'Еще не выбрал(-а)',
+      ],
+      type: 'radio',
+    },
+    {
+      id: 5,
       title: 'В каком городе проживаете ?',
       type: 'text',
       placeholder: 'Введите ваш город',
     },
+
     {
-      id: 5,
+      id: 6,
       title: 'Ваши контактные данные',
       type: 'contact',
       fields: [
@@ -93,6 +105,7 @@ export default function QuizComponent({ onClose }: Props) {
     } else {
       // Form is finished, log the results to console
       const results = formatResults();
+      console.log(results);
       await mutateAsync(results);
       setShowResults(true);
     }
@@ -128,7 +141,7 @@ export default function QuizComponent({ onClose }: Props) {
   // Welcome page component
   const WelcomePage = () => (
     <div className="w-full h-screen flex justify-center items-center fixed top-0 left-0 z-50 bg-[#41414199] backdrop-blur-[10px]">
-      <div className="relative  mx-auto bg-[#141414] rounded-[30px] overflow-hidden  w-[860px] h-full max-h-[590px]  pr-10 pl-[80px] pt-[80px] pb-[50px] box-border">
+      <div className="relative  max-w-[90%] max-h-[370px] mx-auto bg-[#141414] rounded-[16px] md:rounded-[30px] overflow-hidden  md:max-w-[700px] md:max-h-[500px] xl:w-[860px] h-full xl:max-h-[590px]  xl:pr-10 xl:pl-[80px] xl:pt-[80px] md:pt-[50px] md:pl-[50px] md:pr-[30px] pb-[50px] box-border pt-[30px] pl-[30px] pr-[20px]">
         <img
           src={Quiz || '/placeholder.svg'}
           alt=""
@@ -136,7 +149,7 @@ export default function QuizComponent({ onClose }: Props) {
           height="100%"
           className="absolute top-0 left-0 object-cover w-full h-full"
         />
-        <h1 className="max-w-[539px] text-[38px] leading-[38px] relative font-secondary text-white mb-[66px]">
+        <h1 className="max-w-[539px] md:text-[30px] xl:text-[38px] text-lg mb-5  md:leading-[38px] relative font-secondary text-white md:mb-10 xl:mb-[66px]">
           Давайте узнаем какой курс подходит Вам больше всего!
         </h1>
 
@@ -148,18 +161,18 @@ export default function QuizComponent({ onClose }: Props) {
             Начать
           </button>
           <div className="relative">
-            <div className="flex justify-center items-center w-[135px] h-[135px] rounded-full bg-[#FFFFFF80]">
+            <div className="flex justify-center items-center w-[90px] h-[90px] md:w-[135px] md:h-[135px] rounded-full bg-[#FFFFFF80]">
               <img
                 src={Logo || '/placeholder.svg'}
                 alt=""
-                className="w-[90px]"
+                className="md:w-[90px] w-[50px]"
               />
             </div>
-            <div className="absolute rounded-b-[30px] right-20 top-28  rounded-tl-[30px] p-[30px] bg-white ">
-              <span className="block mb-2 font-semibold font-primary text-[15px] text-[#252323]">
+            <div className="absolute rounded-b-[16px] md:rounded-b-[30px] md:right-20 md:top-28 right-10 top-20  rounded-tl-[18px] md:rounded-tl-[30px] p-5 md:p-[30px] bg-white ">
+              <span className="block md:mb-2 mb-1 font-semibold font-primary text-[15px] text-[#252323]">
                 Мохина
               </span>
-              <p className="block w-[362px] font-primary  box-border font-semibold font-primary text-[15px] text-[#252323]">
+              <p className="block md:w-[362px] w-[250px] font-primary  box-border font-semibold font-primary text-[12px] md:text-[15px] text-[#252323]">
                 Прохождение теста займет всего пару минут! Ответьте на вопросы,
                 и мы подберем для вас идеальную программу обучения. Если
                 возникнут вопросы, я всегда на связи!
@@ -178,7 +191,7 @@ export default function QuizComponent({ onClose }: Props) {
   if (showResults) {
     return (
       <div className="w-full h-screen flex justify-center items-center fixed top-0 left-0 z-50 bg-[#41414199] backdrop-blur-[10px]">
-        <div className="relative  mx-auto bg-[#141414] rounded-[30px] overflow-hidden  w-[860px] h-full max-h-[590px]  box-border">
+        <div className="relative  mx-auto bg-[#141414] rounded-[30px] overflow-hidden  w-[90%] max-h-[400px] md:w-[860px] h-full md:max-h-[590px]  box-border">
           <img
             src={Quiz || '/placeholder.svg'}
             alt=""
@@ -186,27 +199,28 @@ export default function QuizComponent({ onClose }: Props) {
             height="100%"
             className="absolute top-0 left-0 object-cover w-full h-full"
           />
-          <div className="relative flex ml-40 -mt-30 justify-center items-center flex-col w-full h-full">
-            <div className="flex relative  justify-center items-center w-[135px] h-[135px] rounded-full bg-[#FFFFFF80]">
+          <div className="relative flex md:ml-50 md:-mt-30 ml-30 -mt-32 justify-center items-center flex-col w-full h-full">
+            <div className="flex relative  justify-center items-center md:w-[135px] md:h-[135px] w-[90px] h-[90px] rounded-full bg-[#FFFFFF80]">
               <img
                 src={Logo || '/placeholder.svg'}
                 alt=""
-                className="w-[90px]"
+                className="md:w-[90px] w-[70px]"
               />
-              <div className="absolute top-30 right-20 rounded-b-[30px] rounded-tl-[30px] p-[30px] bg-white ">
+              <div className="absolute top-20 right-10 md:top-30 md:right-20 rounded-b-[16px] md:rounded-b-[30px] rounded-tl-[16px] md:rounded-tl-[30px] p-[20px] md:p-[30px] bg-white ">
                 <span className="block mb-2 font-semibold font-primary text-[15px] text-[#252323]">
                   Мохина
                 </span>
-                <p className="block w-[362px] font-primary  box-border font-semibold font-primary text-[15px] text-[#252323]">
-                  Вы прошли тест на подбор курса, и у нас уже есть результаты!
-                  Напишите мне, и я отвечу на все вопросы и расскажу о деталях.
+                <p className="block w-[240px] md:w-[362px] font-primary  box-border font-semibold font-primary text-sm md:text-[15px] text-[#252323]">
+                  Вы успешно прошли тест на подбор курса, у нас уже есть
+                  результаты мы свяжемся с вами в ближайшее время и обязательно
+                  проконсультируем
                 </p>
               </div>
             </div>
           </div>
           <button
             onClick={() => onClose()}
-            className="ml-[150px] -mt-10 inline-block relative bg-[#F4D902] cursor-pointer font-primary mb-2.5 md:mb-0 text-[#252323] font-bold  text-sm py-[18px] px-[46px] rounded-[50px] xl:text-[23px] xl:py-[20px] xl:px-[61px] "
+            className="ml-[40px] mt-10 md:ml-[190px] md:-mt-10 inline-block relative bg-[#F4D902] cursor-pointer font-primary mb-2.5 md:mb-0 text-[#252323] font-bold  text-sm py-[18px] px-[46px] rounded-[50px] xl:text-[23px] xl:py-[20px] xl:px-[61px] "
           >
             Закрывать
           </button>
@@ -218,15 +232,15 @@ export default function QuizComponent({ onClose }: Props) {
   // Show quiz questions
   return (
     <div className="w-full h-screen flex justify-center items-center fixed top-0 left-0 z-50 bg-[#41414199] backdrop-blur-[10px]">
-      <div className="w-[890px] rounded-[30px] overflow-hidden bg-white px-[70px] box-border pt-[70px] pb-[50px]">
+      <div className="md:w-[90%] w-[90%] xl:w-[890px] rounded-[30px] overflow-hidden bg-white  box-border md:px-[70px] md:pt-[70px] md:pb-[50px] px-[30px] pt-[30px] pb-[20px]">
         <form>
           {/* Question counter */}
-          <div className="mb-10 font-secondary text-white bg-[#222222] rounded-[58px] text-[22px] leading-[42px] font-medium py-2.5 px-[30px] inline-block">
+          <div className="mb-5 md:mb-10 font-secondary text-white bg-[#222222] rounded-[20px] md:rounded-[58px] text-sm md:text-[22px] leading-[42px] font-medium md:py-2.5 md:px-[30px] py-1 px-[20px] inline-block">
             Вопрос {currentQuestionIndex + 1}/{questions.length}
           </div>
 
           {/* Question title */}
-          <h2 className="text-2xl font-primary font-semibold mb-[30px]">
+          <h2 className="md:text-2xl text-lg font-primary font-semibold md:mb-[30px] mb-5">
             {currentQuestion.title}
           </h2>
 
@@ -241,7 +255,7 @@ export default function QuizComponent({ onClose }: Props) {
                     {currentQuestion.options?.map((option, index) => (
                       <label
                         key={index}
-                        className="flex items-center px-[22px] py-[15px] cursor-pointer hover:bg-[#F1F1F1] rounded-[8px]"
+                        className="flex items-center px-[22px] md:py-[15px] cursor-pointer hover:bg-[#F1F1F1] rounded-[8px]"
                       >
                         <input
                           type="radio"
@@ -273,6 +287,7 @@ export default function QuizComponent({ onClose }: Props) {
                     onChange={e => field.onChange(e.target.value)}
                     className="w-full p-3 border rounded-lg"
                     name={`question-${currentQuestionIndex}`}
+                    required
                   />
                 )}
               />
@@ -297,6 +312,7 @@ export default function QuizComponent({ onClose }: Props) {
                         value={field.value}
                         onChange={e => field.onChange(e.target.value)}
                         className="w-full p-3 border rounded-lg"
+                        required
                       />
                     )}
                   />
@@ -327,12 +343,12 @@ export default function QuizComponent({ onClose }: Props) {
           </div>
 
           {/* Navigation buttons */}
-          <div className="flex justify-between mt-[68px]">
+          <div className="flex justify-between md:mt-10 md:mt-[68px]">
             <button
               type="button"
               onClick={handlePrevious}
               disabled={currentQuestionIndex === 0}
-              className={` py-3.5 px-10 rounded-[50px] text-lg font-semibold text-[#565656] bg-[#F2F2F2] ${
+              className={`md:py-3.5 md:px-10 md:rounded-[50px] md:text-lg py-2 px-5 rounded-[20px] text-sm font-semibold text-[#565656] bg-[#F2F2F2] ${
                 currentQuestionIndex === 0
                   ? 'cursor-not-allowed'
                   : 'cursor-pointer'
@@ -346,7 +362,7 @@ export default function QuizComponent({ onClose }: Props) {
                 handleNext();
               }}
               disabled={!isCurrentQuestionAnswered()}
-              className={`py-3.5 px-10 rounded-[50px] text-lg font-semibold cursor-pointer text-[#252323] bg-[#F4D902]`}
+              className={`md:py-3.5 md:px-10 md:rounded-[50px] md:text-lg py-2 px-5 rounded-[20px] text-sm font-semibold cursor-pointer text-[#252323] bg-[#F4D902]`}
             >
               {currentQuestionIndex === questions.length - 1
                 ? isPending
