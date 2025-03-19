@@ -48,7 +48,7 @@ export default function InfiniteImageMarquee() {
                   <img
                     src={image.src || '/placeholder.svg'}
                     alt={image.alt}
-                    className="object-contain h-full w-full"
+                    className="object-fill h-full w-full"
                   />
                 </div>
               </div>
