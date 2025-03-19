@@ -30,11 +30,11 @@ export default function Banner() {
               ХОЧУ НА КУРС
             </a>
           </div>
-          <div className="absolute right-0 xl:top-[92px] md:-bottom-12 xl:-bottom-auto md:top-auto">
+          <div className="absolute -right-10 -bottom-10 xl:top-[92px] md:-bottom-20 md:-right-15 xl:-bottom-auto md:top-auto xl:-right-50">
             <img
               src={HeroBg}
               alt="Логистика иллюстрация с складом, транспортом и глобальной сетью поставок"
-              className="h-auto md:w-[450px] xl:w-auto w-[300px]"
+              className="h-[300px] md:w-[450px] md:h-[450px] xl:w-[700px] xl:h-[700px] w-[300px] object-cover"
             />
           </div>
         </div>

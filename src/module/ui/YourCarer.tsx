@@ -1,6 +1,9 @@
 import Step from '../../assets/step.png';
 
-export default function CareerBanner() {
+type Props = {
+  setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
+};
+export default function CareerBanner({ setShowModal }: Props) {
   return (
     <div className=" mt-[80px] mb-[120px] md:mt-[110px] md:mb-[169px] xl:mt-[140px] xl:mb-[200px]">
       <div className="w-full container-secondary rounded-[14px] xl:rounded-[30px] md:rounded-[18px] bg-[#141414] relative overflow-hidden px-5 py-12 md:px-[61px] md:py-[50px] xl:py-[90px]">
@@ -22,7 +25,10 @@ export default function CareerBanner() {
               Записаться на пробное занятие!
             </a>
 
-            <button className="bg-[#fff] text-[#252323] font-primary font-bold  text-sm py-[18px] px-[46px] rounded-[50px] xl:text-[23px] xl:py-[28px] xl:px-[51px] ">
+            <button
+              onClick={() => setShowModal(true)}
+              className="bg-[#fff] text-[#252323] font-primary font-bold  text-sm py-[18px] px-[46px] rounded-[50px] xl:text-[23px] xl:py-[28px] xl:px-[51px] "
+            >
               Получить бесплатную консультацию
             </button>
           </div>

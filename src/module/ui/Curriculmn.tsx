@@ -16,7 +16,6 @@ export default function CurriculumSection() {
     }
     return modulesThird;
   }, [activeTab]);
-  console.log(filterData);
 
   return (
     <div className="xl:mt-[160px] md:mt-[110px] mt-[90px]" id="program">

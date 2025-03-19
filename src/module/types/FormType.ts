@@ -3,3 +3,8 @@ export interface FormType {
   phone: string;
   comment: string;
 }
+
+export interface IModal {
+  showModal: boolean;
+  setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
+}

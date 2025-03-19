@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Logo from '../assets/logo.svg';
+import Logo from '../assets/main-logo.png';
 import Menu from '../assets/menu.svg';
 import Close from '../assets/close.svg';
 import Insta from '../assets/insta.svg';
@@ -17,7 +17,7 @@ export default function Navbar() {
     <div className="bg-[#232323] xl:py-4 py-2.5  sticky top-0 z-40 w-full">
       <div className="container-secondary mx-auto px-4 flex justify-between items-center">
         <div className="flex gap-[131px] items-center">
-          <img src={Logo} alt="" />
+          <img src={Logo} alt="" width={119} height={62} />
 
           {/* Desktop Navigation */}
           <nav className="hidden xl:flex space-x-11">
@@ -62,7 +62,7 @@ export default function Navbar() {
             <div className="pb-12">
               <ul className="flex justify-center items-center gap-x-10">
                 <li>
-                  <a href="">
+                  <a href="https://www.instagram.com/logist_academy?igsh=eTg3ZDB1b2tlcTAw">
                     <img src={Insta} alt="" />
                   </a>
                 </li>
@@ -77,7 +77,7 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://t.me/logist_academy">
                     <img src={TG} alt="" />
                   </a>
                 </li>

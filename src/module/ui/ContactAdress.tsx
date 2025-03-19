@@ -95,7 +95,7 @@ export default function ContactMap() {
                 </div>
                 <div>
                   <p className="text-white font-semibold xl:text-[22px] font-primary text-[15px]">
-                    Тел: +998887075888
+                    Тел: <a href="tel:+998887075888">+998887075888</a>
                   </p>
                 </div>
               </div>
@@ -116,7 +116,7 @@ export default function ContactMap() {
                   </svg>
                 </div>
                 <div className="flex items-center gap-10">
-                  <a href="">
+                  <a href="https://www.instagram.com/logist_academy?igsh=eTg3ZDB1b2tlcTAw">
                     <img src={Insta} alt="" />
                   </a>
                   <a href="">
@@ -125,7 +125,7 @@ export default function ContactMap() {
                   <a href="">
                     <img src={FB} alt="" />
                   </a>
-                  <a href="">
+                  <a href="https://t.me/logist_academy">
                     <img src={TG} alt="" />
                   </a>
                 </div>

@@ -20,7 +20,6 @@ export default function LogisticsMenu({
     setSelected(index);
     setIsOpen(false);
     setActiveTab(label);
-    console.log(label);
   };
 
   return (
