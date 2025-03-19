@@ -40,11 +40,8 @@ export default function InfiniteImageMarquee() {
         <div className="flex whitespace-nowrap">
           <Marquee>
             {allImages.map((image, index) => (
-              <div
-                key={`${image.id}-${index}`}
-                className="flex-shrink-0  md:mx-1 mx-[3px]"
-              >
-                <div className="relative  overflow-hidden xl:h-[447px] md:h-[340px] h-[230px]">
+              <div key={`${image.id}-${index}`} className="md:mx-1 mx-[3px]">
+                <div className="relative  overflow-hidden w-auto xl:h-[447px] md:h-[340px] h-[230px]">
                   <img
                     src={image.src || '/placeholder.svg'}
                     alt={image.alt}
