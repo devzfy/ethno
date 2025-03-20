@@ -31,10 +31,10 @@ export default function ContactForm() {
         <div className="flex flex-col md:flex-col lg:flex-row lg:items-start lg:justify-between gap-10">
           {/* Left side - Text */}
           <div className="w-full xl:w-1/2">
-            <h2 className="md:max-w-[477px] xl:max-w-full md:text-center xl:text-left mx-auto xl:mx-0 xl:text-[72px] xl:leading-[68px] md:text-[37px] leading-[30px] font-secondary text-[30px] font-medium text-white">
+            <h2 className="md:max-w-[477px] xl:max-w-full md:text-center xl:text-left mx-auto xl:mx-0 xl:text-[72px] xl:leading-[68px] md:text-[37px] leading-[30px] font-secondary text-[30px] text-center  font-medium text-white">
               Заполните форму, ответим на все ваши вопросы
             </h2>
-            <p className="max-w-[390px] font-primary xl:text-[20px] md:text-sm text-center xl:text-left mx-auto xl:mx-0 text-white font-bold xl:mt-10 md:mt-[30px]">
+            <p className="max-w-[390px] font-primary xl:text-[20px] md:text-sm text-center xl:text-left mx-auto xl:mx-0 text-white font-bold xl:mt-10 md:mt-[30px] mt-5">
               Оставьте контакты и мы свяжемся с вами в ближайшее время
             </p>
           </div>

@@ -23,6 +23,11 @@ function App() {
       return document.body.classList.remove('active');
     }
   }, [showModal]);
+  useEffect(() => {
+    setTimeout(() => {
+      setShowModal(true);
+    }, 30000);
+  }, []);
   return (
     <div className="">
       <Navbar />
@@ -38,7 +43,7 @@ function App() {
         <InfiniteImageMarquee />
         <ContactForm />
         <ContactMap />
-        <Footer />
+        <Footer setShowModal={setShowModal} />
         <QuizModal showModal={showModal} setShowModal={setShowModal} />
       </div>
     </div>

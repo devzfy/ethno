@@ -6,8 +6,10 @@ import Insta from '../assets/insta.svg';
 import YouTuber from '../assets/youtube.svg';
 import FB from '../assets/fb.svg';
 import TG from '../assets/tg.svg';
+import { useWindowSize } from '@uidotdev/usehooks';
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { width } = useWindowSize();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -17,7 +19,9 @@ export default function Navbar() {
     <div className="bg-[#232323] xl:py-4 py-2.5 sticky top-0 z-40 w-full">
       <div className="container-secondary mx-auto px-4 flex justify-between items-center">
         <div className="flex xl:gap-20 2xl:gap-[131px] items-center">
-          <img src={Logo} alt="" width={119} height={62} />
+          <a href="#">
+            <img src={Logo} alt="" width={119} height={62} />
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden xl:flex xl:space-x-7 2xl:space-x-11">
@@ -34,8 +38,11 @@ export default function Navbar() {
             +998887075888
           </a>
           <a
-            href="#contact"
+            href={
+              width && width > 1280 ? '#contact' : 'https://t.me/logist_academy'
+            }
             className="bg-[#F4D902] hidden md:block xl:mr-0  text-black font-bold xl:py-[18px] xl:px-[30px] md:py-2.5 md:px-5 rounded-[50px] text-lg"
+            target={width && width > 1280 ? '_parent' : '_blank'}
           >
             ХОЧУ НА КУРС
           </a>
@@ -67,7 +74,7 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://www.youtube.com/watch?v=pA6KFGgOgtk&t=23s">
                     <img src={YouTuber} alt="" />
                   </a>
                 </li>

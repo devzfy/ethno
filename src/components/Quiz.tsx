@@ -1,9 +1,10 @@
 'use client';
 import Quiz from '../assets/quiz.png';
-import Logo from '../assets/logo-black.png';
 import { useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { useSendTestResults } from '../module/hooks/useSendTestResult';
+import { CloseButton } from '../assets/icons';
+import Mohina from '../assets/mohina.webp';
 
 type FormValues = {
   answers: { value: string; additionalValue?: string }[];
@@ -142,6 +143,12 @@ export default function QuizComponent({ onClose }: Props) {
   const WelcomePage = () => (
     <div className="w-full h-screen flex justify-center items-center fixed top-0 left-0 z-50 bg-[#41414199] backdrop-blur-[10px]">
       <div className="relative  max-w-[95%] max-h-[390px] mx-auto bg-[#141414] rounded-[16px] md:rounded-[30px] overflow-hidden  md:max-w-[700px] md:max-h-[500px] xl:w-[860px] h-full xl:max-h-[590px]  xl:pr-10 xl:pl-[80px] xl:pt-[80px] md:pt-[50px] md:pl-[50px] md:pr-[30px] pb-[50px] box-border pt-[30px] pl-[30px] pr-[20px]">
+        <button
+          onClick={onClose}
+          className="absolute top-5 right-5 z-40 text-white"
+        >
+          <CloseButton />
+        </button>
         <img
           src={Quiz || '/placeholder.svg'}
           alt=""
@@ -161,11 +168,11 @@ export default function QuizComponent({ onClose }: Props) {
             Начать
           </button>
           <div className="relative">
-            <div className="flex justify-center items-center w-[90px] h-[90px] md:w-[135px] md:h-[135px] rounded-full bg-[#FFFFFF80]">
+            <div className="flex overflow-hidden justify-center items-center w-[90px] h-[90px] md:w-[135px] md:h-[135px] rounded-full bg-[#FFFFFF80]">
               <img
-                src={Logo || '/placeholder.svg'}
+                src={Mohina || '/placeholder.svg'}
                 alt=""
-                className="md:w-[90px] w-[50px]"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute rounded-b-[16px] md:rounded-b-[30px] md:right-20 md:top-28 right-10 top-20  rounded-tl-[18px] md:rounded-tl-[30px] p-5 md:p-[30px] bg-white ">
@@ -192,6 +199,12 @@ export default function QuizComponent({ onClose }: Props) {
     return (
       <div className="w-full h-screen flex justify-center items-center fixed top-0 left-0 z-50 bg-[#41414199] backdrop-blur-[10px]">
         <div className="relative mx-auto bg-[#141414] rounded-[30px] overflow-hidden  w-[95%] max-h-[420px] md:w-[860px] h-full md:max-h-[590px]  box-border">
+          <button
+            onClick={onClose}
+            className="absolute top-5 right-5 z-40 text-white"
+          >
+            <CloseButton />
+          </button>
           <img
             src={Quiz || '/placeholder.svg'}
             alt=""
@@ -202,18 +215,18 @@ export default function QuizComponent({ onClose }: Props) {
           <div className="relative flex md:ml-50 md:-mt-30 ml-30 -mt-32 justify-center items-center flex-col w-full h-full">
             <div className="flex relative  justify-center items-center md:w-[135px] md:h-[135px] w-[90px] h-[90px] rounded-full bg-[#FFFFFF80]">
               <img
-                src={Logo || '/placeholder.svg'}
+                src={Mohina || '/placeholder.svg'}
                 alt=""
-                className="md:w-[90px] w-[70px]"
+                className="w-full h-full object-cover rounded-full"
               />
               <div className="absolute top-20 right-10 md:top-30 md:right-20 rounded-b-[16px] md:rounded-b-[30px] rounded-tl-[16px] md:rounded-tl-[30px] p-[20px] md:p-[30px] bg-white ">
                 <span className="block mb-2 font-semibold font-primary text-[15px] text-[#252323]">
                   Мохина
                 </span>
                 <p className="block w-[240px] md:w-[362px] font-primary  box-border font-semibold font-primary text-sm md:text-[15px] text-[#252323]">
-                  Вы успешно прошли тест на подбор курса, у нас уже есть
-                  результаты мы свяжемся с вами в ближайшее время и обязательно
-                  проконсультируем
+                  Вы успешно прошли тест на подбор курса. Мы получили результат
+                  Вашего теста. Мы свяжемся с Вами в ближайшее время и
+                  обязательно проконсультируем
                 </p>
               </div>
             </div>
@@ -222,7 +235,7 @@ export default function QuizComponent({ onClose }: Props) {
             onClick={() => onClose()}
             className="ml-[40px] mt-10 md:ml-[190px] md:-mt-10 inline-block relative bg-[#F4D902] cursor-pointer font-primary mb-2.5 md:mb-0 text-[#252323] font-bold  text-sm py-[18px] px-[46px] rounded-[50px] xl:text-[23px] xl:py-[20px] xl:px-[61px] "
           >
-            Закрывать
+            Закрыть
           </button>
         </div>
       </div>
@@ -232,7 +245,13 @@ export default function QuizComponent({ onClose }: Props) {
   // Show quiz questions
   return (
     <div className="w-full h-screen flex justify-center items-center fixed top-0 left-0 z-50 bg-[#41414199] backdrop-blur-[10px]">
-      <div className="md:w-[90%] w-[95%] xl:w-[890px] rounded-[30px] overflow-hidden bg-white  box-border md:px-[70px] md:pt-[70px] md:pb-[50px] px-[30px] pt-[30px] pb-[20px]">
+      <div className="md:w-[90%] relative w-[95%] xl:w-[890px] rounded-[30px] overflow-hidden bg-white  box-border md:px-[70px] md:pt-[70px] md:pb-[50px] px-[30px] pt-[30px] pb-[20px]">
+        <button
+          onClick={onClose}
+          className="absolute top-5 right-5 z-50 text-black"
+        >
+          <CloseButton />
+        </button>
         <form>
           {/* Question counter */}
           <div className="mb-5 md:mb-10 font-secondary text-white bg-[#222222] rounded-[20px] md:rounded-[58px] text-sm md:text-[22px] leading-[42px] font-medium md:py-2.5 md:px-[30px] py-1 px-[20px] inline-block">

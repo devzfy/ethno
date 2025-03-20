@@ -119,7 +119,7 @@ export default function ContactMap() {
                   <a href="https://www.instagram.com/logist_academy?igsh=eTg3ZDB1b2tlcTAw">
                     <img src={Insta} alt="" />
                   </a>
-                  <a href="">
+                  <a href="https://www.youtube.com/watch?v=pA6KFGgOgtk&t=23s">
                     <img src={YouTube} alt="" />
                   </a>
                   <a href="">
@@ -137,7 +137,7 @@ export default function ContactMap() {
         {/* Right side - Map */}
         <div className="w-full xl:h-full md:h-[421px] h-[366px] col-span-1 xl:col-span-8 xl:rounded-[30px] md:rounded-[18px] overflow-hidden rounded-[14px] md:mt-0 mt-1.5">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23975.163531184102!2d69.27008646555758!3d41.31113817538407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b2931f41f23%3A0x81095e06b654b845!2sAmir%20Temur%20xiyoboni!5e0!3m2!1suz!2s!4v1742136081201!5m2!1suz!2s"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2997.7263586724393!2d69.22020287639772!3d41.29305960184029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDE3JzM1LjAiTiA2OcKwMTMnMjIuMCJF!5e0!3m2!1suz!2s!4v1742475455016!5m2!1suz!2s"
             width="100%"
             height="100%"
             loading="lazy"

@@ -1,7 +1,7 @@
 'use client';
+import Mohina from '../../assets/mohina.webp';
 
 import BG4 from '../../assets/bg4.png';
-import Logo from '../../assets/logo-black.png';
 export default function ConsultationRequest() {
   return (
     <div className="mt-[86px] md:mt-[110px] xl:mt-[140px]">
@@ -26,12 +26,8 @@ export default function ConsultationRequest() {
           {/* Right side - Chat bubble and logo */}
           <div className="relative flex items-end md:items-stretch md:justify-end flex-col md:flex-row xl:block">
             {/* Logo */}
-            <div className="xl:w-[217px] xl:h-[217px] md:w-[150px] w-[84px] h-[84px] md:-mt-[78px] xl:-mt-0 md:-mr-[30px] xl:-mr-0 md:h-[150px] rounded-full bg-[#FFFFFF80] flex justify-center items-center mb-[18px] md:mb-0">
-              <img
-                src={Logo}
-                alt=""
-                className="md:w-[100px] xl:w-auto w-[60px]"
-              />
+            <div className="xl:w-[217px] xl:h-[217px] overflow-hidden md:w-[150px] w-[84px] h-[84px] md:-mt-[78px] xl:-mt-0 md:-mr-[30px] xl:-mr-0 md:h-[150px] rounded-full bg-[#FFFFFF80] flex justify-center items-center mb-[18px] md:mb-0">
+              <img src={Mohina} alt="" className="w-full h-full object-cover" />
             </div>
 
             {/* Chat bubble */}

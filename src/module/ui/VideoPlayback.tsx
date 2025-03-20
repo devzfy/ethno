@@ -10,7 +10,17 @@ export default function VideoPlayback() {
             Посмотрите видео, в котором рассказываем про реальные зарплаты
             логистов и процесс работы на фрилансе
           </p>
-          <img src={Laptop} alt="" className="xl:h-[693px] xl:ml-20 md:ml-10" />
+          <a
+            href="https://www.youtube.com/watch?v=pA6KFGgOgtk&t=23s"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={Laptop}
+              alt=""
+              className="xl:h-[693px] xl:ml-20 md:ml-10"
+            />
+          </a>
         </div>
         <div
           id="student"
