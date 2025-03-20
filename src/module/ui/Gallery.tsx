@@ -1,5 +1,4 @@
 import BG5 from '../../assets/bg5.png';
-import Vector from '../../assets/Vector.png';
 export default function Gallery() {
   return (
     <div
@@ -24,40 +23,120 @@ export default function Gallery() {
           студентов.
         </p>
       </div>
-
       <div className="container-secondary">
         <div className="grid grid-cols-3 relative xl:mt-[120px] md:mt-[50px] mt-[60px] xl:space-x-2.5 md:space-x-2 space-x-1.5">
           <div className="xl:space-y-2.5 md:space-y-2 space-y-1.5">
-            <div className="xl:rounded-[30px] rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[614px] md:h-[231px] h-[304px]">
-              <img className="" src={Vector} alt="" />
+            <div className="xl:rounded-[30px] overflow-hidden rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[614px] md:h-[231px] h-[304px]">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/_wF18D2HPHY"
+                title="с 0 до Логиста +998887075888 #логистика"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
             </div>
-            <div className="xl:rounded-[30px] rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[305px] md:h-[125px] h-[145px]">
-              <img className="" src={Vector} alt="" />
+            <div className="xl:rounded-[30px] overflow-hidden rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[305px] md:h-[125px] h-[145px]">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/_wF18D2HPHY"
+                title="с 0 до Логиста +998887075888 #логистика"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
             </div>
-            <div className="xl:rounded-[30px] rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[427px] md:h-[178px] h-[206px]">
-              <img className="" src={Vector} alt="" />
+            <div className="xl:rounded-[30px] overflow-hidden rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[427px] md:h-[178px] h-[206px]">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/nhpJdYGm34g"
+                title="с 0 до Логиста +998887075888 #логистика"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
           <div className="xl:space-y-2.5  md:space-y-2 space-y-1.5 xl:mt-[119px] mt-[72px]">
-            <div className="xl:rounded-[30px] rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[305px] md:h-[125px] h-[145px]">
-              <img className="" src={Vector} alt="" />
+            <div className="xl:rounded-[30px] overflow-hidden rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[305px] md:h-[125px] h-[145px]">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/reNyYJ0E704"
+                title="с 0 до Логиста +998887075888 #логистика"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
             </div>
-            <div className="xl:rounded-[30px] rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[614px] md:h-[274px] h-[304px]">
-              <img className="" src={Vector} alt="" />
+            <div className="xl:rounded-[30px] overflow-hidden rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[614px] md:h-[274px] h-[304px]">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/EV_PwSOGfa4"
+                title="с 0 до Логиста +998887075888 #логистика"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
             </div>
-            <div className="xl:rounded-[30px] rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[427px] md:h-[178px] h-[206px]">
-              <img className="" src={Vector} alt="" />
+            <div className="xl:rounded-[30px] overflow-hidden rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[427px] md:h-[178px] h-[206px]">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/sIyA61jo81s"
+                title="с 0 до Логиста +998887075888 #логистика"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
           <div className="xl:space-y-2.5 md:space-y-2 space-y-1.5 xl:mt-[50px] mt-[28px]">
-            <div className="xl:rounded-[30px] rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[427px] md:h-[178px] h-[206px]">
-              <img className="" src={Vector} alt="" />
+            <div className="xl:rounded-[30px] overflow-hidden rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[427px] md:h-[178px] h-[206px]">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/6lWALl8K3DU"
+                title="с 0 до Логиста +998887075888 #логистика"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
             </div>
-            <div className="xl:rounded-[30px] rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[305px] md:h-[274px] h-[304px]">
-              <img className="" src={Vector} alt="" />
+            <div className="xl:rounded-[30px] overflow-hidden rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[305px] md:h-[274px] h-[304px]">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/5CvUaOKekns"
+                title="с 0 до Логиста +998887075888 #логистика"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
             </div>
-            <div className="xl:rounded-[30px] rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[614px] md:h-[125px] h-[145px]">
-              <img className="" src={Vector} alt="" />
+            <div className="xl:rounded-[30px] overflow-hidden rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[614px] md:h-[125px] h-[145px]">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/Ocu6ZQ2EVnk"
+                title="с 0 до Логиста +998887075888 #логистика"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </div>

@@ -75,7 +75,15 @@ export default function Footer({ setShowModal }: Props) {
           </button>
         </div>
         <p className="md:text-lg text-[#6A6A6A] text-[12px] font-semibold font-primary right-10 md:left-4 xl:left-auto absolute bottom-0 md:font-medium">
-          Создано Bureau La'mer за деньги Logist Academy
+          Создано{' '}
+          <a
+            href="https://bureaulamer.com/"
+            target="_blank"
+            className="font-semibold underline"
+          >
+            Bureau La'mer
+          </a>{' '}
+          за деньги Logist Academy
         </p>
       </div>
     </div>
