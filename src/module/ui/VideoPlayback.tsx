@@ -6,7 +6,7 @@ export default function VideoPlayback() {
     <div>
       <div className="mt-[170px]">
         <div className="flex justify-center flex-col items-center">
-          <p className="font-bold xl:text-xl text-sm font-primary xl:max-w-[762px] md:max-w-[590px] text-center mb-10 md:mb-0">
+          <p className="font-bold xl:text-xl text-sm font-primary xl:max-w-[762px] md:max-w-[590px] text-center mb-[50px] md:mb-[44px] xl:mb-[50px]">
             Посмотрите видео, в котором рассказываем про реальные зарплаты
             логистов и процесс работы на фрилансе
           </p>
@@ -15,11 +15,7 @@ export default function VideoPlayback() {
             target="_blank"
             rel="noreferrer"
           >
-            <img
-              src={Laptop}
-              alt=""
-              className="xl:h-[693px] xl:ml-20 md:ml-10"
-            />
+            <img src={Laptop} alt="" className="xl:h-[693px]" />
           </a>
         </div>
         <div
