@@ -191,7 +191,7 @@ export default function QuizComponent({ onClose }: Props) {
   if (showResults) {
     return (
       <div className="w-full h-screen flex justify-center items-center fixed top-0 left-0 z-50 bg-[#41414199] backdrop-blur-[10px]">
-        <div className="relative  mx-auto bg-[#141414] rounded-[30px] overflow-hidden  w-[95%] max-h-[420px] md:w-[860px] h-full md:max-h-[590px]  box-border">
+        <div className="relative mx-auto bg-[#141414] rounded-[30px] overflow-hidden  w-[95%] max-h-[420px] md:w-[860px] h-full md:max-h-[590px]  box-border">
           <img
             src={Quiz || '/placeholder.svg'}
             alt=""

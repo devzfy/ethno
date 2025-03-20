@@ -16,11 +16,11 @@ export default function Navbar() {
   return (
     <div className="bg-[#232323] xl:py-4 py-2.5 sticky top-0 z-40 w-full">
       <div className="container-secondary mx-auto px-4 flex justify-between items-center">
-        <div className="flex gap-[131px] items-center">
+        <div className="flex xl:gap-20 2xl:gap-[131px] items-center">
           <img src={Logo} alt="" width={119} height={62} />
 
           {/* Desktop Navigation */}
-          <nav className="hidden xl:flex space-x-11">
+          <nav className="hidden xl:flex xl:space-x-7 2xl:space-x-11">
             <NavLinks />
           </nav>
         </div>
@@ -35,7 +35,7 @@ export default function Navbar() {
           </a>
           <a
             href="#contact"
-            className="bg-[#F4D902] hidden md:block  text-black font-bold xl:py-[18px] xl:px-[30px] md:py-2.5 md:px-5 rounded-[50px] text-lg"
+            className="bg-[#F4D902] hidden md:block xl:mr-0  text-black font-bold xl:py-[18px] xl:px-[30px] md:py-2.5 md:px-5 rounded-[50px] text-lg"
           >
             ХОЧУ НА КУРС
           </a>
@@ -101,31 +101,31 @@ function NavLinks() {
       </a>
       <a
         href="#student"
-        className="text-white  xl:text-lg text-[16px] font-semibold"
+        className="text-white  xl:text-lg text-[16px] font-semibold font-primary"
       >
         Студенты
       </a>
       <a
         href="#program"
-        className="text-white  xl:text-lg text-[16px] font-semibold"
+        className="text-white  xl:text-lg text-[16px] font-semibold font-primary"
       >
         Программа
       </a>
       <a
         href="#gallery"
-        className="text-white  xl:text-lg text-[16px] font-semibold"
+        className="text-white  xl:text-lg text-[16px] font-semibold font-primary"
       >
         Отзывы
       </a>
       <a
         href="#faq"
-        className="text-white  xl:text-lg text-[16px] font-semibold"
+        className="text-white  xl:text-lg text-[16px] font-semibold font-primary"
       >
         FAQ
       </a>
       <a
         href="#contact"
-        className="text-white  xl:text-lg  text-[16px] font-semibold"
+        className="text-white  xl:text-lg  text-[16px] font-semibold font-primary"
       >
         Контакты
       </a>

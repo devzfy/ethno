@@ -14,13 +14,13 @@ export default function VideoPlayback() {
         </div>
         <div
           id="student"
-          className="bg-white xl:rounded-[50px] md:rounded-[22px] rounded-[12px] xl:px-[119px] md:px-5 xl:pb-[100px] md:pb-[70px] xl:pt-[409px] md:pt-[295px] pt-[170px] xl:-mt-80 md:-mt-52 -mt-28"
+          className="bg-white xl:rounded-[50px] md:rounded-[22px] rounded-[12px] 2xl:px-[119px] xl:px-[30px] md:px-5 xl:pb-[100px] md:pb-[70px] xl:pt-[409px] md:pt-[295px] pt-[170px] xl:-mt-80 md:-mt-52 -mt-28"
         >
           <h1 className="xl:text-[80px] md:text-[37px] text-[28px] leading-[30px] max-w-full md:leading-[30px] xl:leading-[67px] text-center mx-auto font-secondary font-medium xl:max-w-[1290px] md:max-w-[650px] ">
             Более 2000 студентов прошли наши курсы и стали логистами
           </h1>
           <div className="flex justify-between xl:space-x-10 xl:mt-[90px] mt-[50px] md:mt-[60px] flex-col xl:flex-row">
-            <div className="xl:w-[65%] flex flex-wrap w-full">
+            <div className="xl:w-[60%] 2xl:w-[65%] flex flex-wrap w-full">
               <div className="md:w-1/2 w-full border-b-4 md:border-r-4 flex justify-center items-center flex-col">
                 <h2 className="text-[#252323] xl:text-[82px] text-[60px] font-medium font-primary">
                   60/40%
@@ -54,7 +54,7 @@ export default function VideoPlayback() {
                 </p>
               </div>
             </div>
-            <div className="mt-10  xl:w-[35%] md:w-[492px] w-[90%] mx-auto xl:mx-auto md:mt-[50px] xl:mt-0 relative xl:h-[524px] h-[286px] rounded-4xl overflow-hidden flex justify-center items-center flex-col gap-y-[61px] mb-[60px] md:mb-0">
+            <div className="mt-10  xl:w-[40%] 2xl:w-[35%] md:w-[492px] w-[90%] mx-auto xl:mx-auto md:mt-[50px] xl:mt-0 relative xl:h-[524px] h-[286px] rounded-4xl overflow-hidden flex justify-center items-center flex-col gap-y-[61px] mb-[60px] md:mb-0">
               <img
                 src={BG2}
                 alt=""

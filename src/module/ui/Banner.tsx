@@ -9,7 +9,7 @@ export default function Banner() {
       <div className="container-secondary px-4 mx-auto xl:pt-[266px] pt-[150px] md:pt-[170px] xl:pb-[90px]">
         <div className="">
           <div className="">
-            <h1 className="md:mb-8 mb-5 xl:text-[90px] relative text-white xl:leading-[82px] md:text-[58px] md:leading-[57px] text-[31px] leading-[30px]">
+            <h1 className="md:mb-8 mb-5 xl:text-[80px] 2xl:text-[90px] relative text-white xl:leading-[82px] md:text-[58px] md:leading-[57px] text-[31px] leading-[30px]">
               Курсы Логистики
               <br />
               <span className="">
@@ -18,7 +18,7 @@ export default function Banner() {
                 профессионала
               </span>
             </h1>
-            <p className="text-white xl:text-xl relative md:text-sm font-semibold max-w-[770px] md:max-w-[1009px]">
+            <p className="text-white xl:text-xl xl:max-w-[800px] 2xl:max-w-[1009px] relative md:text-sm font-semibold max-w-[770px] md:max-w-[1009px]">
               Без громких обещаний — только навыки, с которыми вы уверенно
               выйдете на стабильный доход от 500 долларов и сможете грамотно
               управлять потоками и маршрутами.
@@ -34,7 +34,7 @@ export default function Banner() {
             <img
               src={HeroBg}
               alt="Логистика иллюстрация с складом, транспортом и глобальной сетью поставок"
-              className="h-[300px] md:w-[450px] md:h-[450px] xl:w-[700px] xl:h-[700px] w-[300px] object-cover"
+              className="h-[300px] md:w-[450px] md:h-[450px] xl:w-[600px] xl:h-[600px] 2xl:w-[700px] 2xl:h-[700px] w-[300px] object-cover"
             />
           </div>
         </div>
