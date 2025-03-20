@@ -4,11 +4,11 @@ import { useWindowSize } from '@uidotdev/usehooks';
 export default function Banner() {
   const { width } = useWindowSize();
   return (
-    <section className="relative   md:h-[949px] h-[811px] rounded-b-[14px] rounded-bl-[14px] xl:rounded-b-[30px] xl:rounded-bl-[30px] md:rounded-b-[18px] md:rounded-bl-[18px] overflow-hidden">
+    <section className="relative   md:h-[949px] h-[630px] rounded-b-[14px] rounded-bl-[14px] xl:rounded-b-[30px] xl:rounded-bl-[30px] md:rounded-b-[18px] md:rounded-bl-[18px] overflow-hidden">
       <div className="absolute w-full ">
-        <img src={BG} alt="" width="100%" className="md:h-[949px] h-[811px]" />
+        <img src={BG} alt="" width="100%" className="md:h-[949px] h-[670px]" />
       </div>
-      <div className="container-secondary px-4 mx-auto xl:pt-[166px] pt-[150px] md:pt-[170px] xl:pb-[90px]">
+      <div className="container-secondary px-4 mx-auto xl:pt-[166px] pt-[60px] md:pt-[170px] xl:pb-[90px]">
         <div className="">
           <div className="">
             <h1 className="md:mb-8 mb-5 xl:text-[80px] 2xl:text-[90px] relative text-white xl:leading-[82px] md:text-[58px] md:leading-[57px] text-[31px] leading-[30px]">
@@ -31,7 +31,7 @@ export default function Banner() {
                   ? '#contact'
                   : 'https://t.me/logist_academy'
               }
-              className="inline-block text-sm bg-[#F4D902] text-black font-bold py-[18px] px-[30px] xl:py-[28px] xl:px-[60px]  rounded-full md:text-lg  relative md:mt-14 mt-12"
+              className="inline-block text-sm bg-[#F4D902] text-black font-bold py-[18px] px-[30px] xl:py-[28px] xl:px-[60px]  rounded-full md:text-lg  relative md:mt-14 mt-8"
               target={width && width > 1280 ? '_parent' : '_blank'}
             >
               ХОЧУ НА КУРС
