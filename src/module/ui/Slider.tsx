@@ -1,5 +1,7 @@
 'use client';
 import Marquee from 'react-fast-marquee';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import Image1 from '../../assets/img1.png';
 import Image3 from '../../assets/img3.png';
 import Image4 from '../../assets/img4.jpg';
@@ -19,7 +21,23 @@ export default function InfiniteImageMarquee() {
 
   // Create a duplicate set of images for seamless looping
   const allImages = [...images, ...images];
-
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+  };
   return (
     <div className="w-full overflow-hidden md:mb-[150px] mb-[80px]">
       <div className="mb-[50px] xl:mb-20">
@@ -34,10 +52,16 @@ export default function InfiniteImageMarquee() {
           </p>
         </div>
       </div>
-      <Marquee speed={80}>
+      <Carousel
+        responsive={responsive}
+        autoPlay
+        ssr
+        infinite
+        autoPlaySpeed={2000}
+      >
         {allImages.map((image, index) => (
           <div key={`${image.id}-${index}`} className="md:mx-1 mx-[3px]">
-            <div className="relative  overflow-hidden min-w-[325px] md:min-w-auto xl:h-[447px] md:h-[340px] h-[230px]">
+            <div className="relative  overflow-hidden  xl:h-[447px] md:h-[340px] h-[230px]">
               <img
                 src={image.src || '/placeholder.svg'}
                 alt={image.alt}
@@ -46,7 +70,7 @@ export default function InfiniteImageMarquee() {
             </div>
           </div>
         ))}
-      </Marquee>
+      </Carousel>
     </div>
   );
 }
