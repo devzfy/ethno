@@ -1,4 +1,52 @@
+import Carousel from 'react-multi-carousel';
 import BG5 from '../../assets/bg5.png';
+const videos = [
+  {
+    title: 'с 0 до Логиста +998887075888 #логистика',
+    src: 'https://www.youtube.com/embed/_wF18D2HPHY',
+  },
+  {
+    title: 'с 0 до Логиста +998887075888 #логистика',
+    src: 'https://www.youtube.com/embed/_wF18D2HPHY',
+  },
+  {
+    title: 'с 0 до Логиста +998887075888 #логистика',
+    src: 'https://www.youtube.com/embed/nhpJdYGm34g',
+  },
+  {
+    title: 'с 0 до Логиста +998887075888 #логистика',
+    src: 'https://www.youtube.com/embed/reNyYJ0E704',
+  },
+  {
+    title: 'с 0 до Логиста +998887075888 #логистика',
+    src: 'https://www.youtube.com/embed/EV_PwSOGfa4',
+  },
+  {
+    title: 'с 0 до Логиста +998887075888 #логистика',
+    src: 'https://www.youtube.com/embed/sIyA61jo81s',
+  },
+  {
+    title: 'с 0 до Логиста +998887075888 #логистика',
+    src: 'https://www.youtube.com/embed/6lWALl8K3DU',
+  },
+  {
+    title: 'с 0 до Логиста +998887075888 #логистика',
+    src: 'https://www.youtube.com/embed/5CvUaOKekns',
+  },
+  {
+    title: 'с 0 до Логиста +998887075888 #логистика',
+    src: 'https://www.youtube.com/embed/Ocu6ZQ2EVnk',
+  },
+];
+
+const responsive = {
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1,
+  },
+};
+
 export default function Gallery() {
   return (
     <div
@@ -23,7 +71,7 @@ export default function Gallery() {
           студентов.
         </p>
       </div>
-      <div className="container-secondary">
+      <div className="container-secondary hidden md:block">
         <div className="grid grid-cols-3 relative xl:mt-[120px] md:mt-[50px] mt-[60px] xl:space-x-2.5 md:space-x-2 space-x-1.5">
           <div className="xl:space-y-2.5 md:space-y-2 space-y-1.5">
             <div className="xl:rounded-[30px] overflow-hidden rounded-[14px] bg-[#D5D5D5] flex justify-center items-center xl:h-[614px] md:h-[231px] h-[304px]">
@@ -140,6 +188,30 @@ export default function Gallery() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="container-secondary md:hidden block">
+        <Carousel
+          responsive={responsive}
+          autoPlay
+          ssr
+          infinite
+          autoPlaySpeed={2000}
+        >
+          {videos.map(el => (
+            <div className="mt-4 overflow-hidden rounded-[14px] h-[245px]">
+              <iframe
+                width="100%"
+                height="100%"
+                src={el.src}
+                title={el.src}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+          ))}
+        </Carousel>
       </div>
     </div>
   );
