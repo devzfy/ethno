@@ -1,7 +1,6 @@
 'use client';
 import Marquee from 'react-fast-marquee';
 import Image1 from '../../assets/img1.png';
-import Image2 from '../../assets/img2.png';
 import Image3 from '../../assets/img3.png';
 import Image4 from '../../assets/img4.jpg';
 import Image5 from '../../assets/img5.jpg';
@@ -11,7 +10,6 @@ export default function InfiniteImageMarquee() {
   // Sample images - replace with your actual image URLs
   const images = [
     { id: 1, src: Image1, alt: 'Image 1' },
-    { id: 2, src: Image2, alt: 'Image 2' },
     { id: 3, src: Image3, alt: 'Image 3' },
     { id: 4, src: Image4, alt: 'Image 4' },
     { id: 5, src: Image5, alt: 'Image 5' },
@@ -36,7 +34,7 @@ export default function InfiniteImageMarquee() {
           </p>
         </div>
       </div>
-      <Marquee>
+      <Marquee speed={80}>
         {allImages.map((image, index) => (
           <div key={`${image.id}-${index}`} className="md:mx-1 mx-[3px]">
             <div className="relative  overflow-hidden min-w-[325px] md:min-w-auto xl:h-[447px] md:h-[340px] h-[230px]">
