@@ -1,5 +1,4 @@
 'use client';
-import Marquee from 'react-fast-marquee';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Image1 from '../../assets/img1.png';
