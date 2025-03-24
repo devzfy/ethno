@@ -4,7 +4,7 @@ import { useWindowSize } from '@uidotdev/usehooks';
 export default function Banner() {
   const { width } = useWindowSize();
   return (
-    <section className="relative   md:h-[949px] h-[630px] rounded-b-[14px] rounded-bl-[14px] xl:rounded-b-[30px] xl:rounded-bl-[30px] md:rounded-b-[18px] md:rounded-bl-[18px] overflow-hidden">
+    <section className="relative   md:h-[649px] xl:h-[949px] h-[470px] rounded-b-[14px] rounded-bl-[14px] xl:rounded-b-[30px] xl:rounded-bl-[30px] md:rounded-b-[18px] md:rounded-bl-[18px] overflow-hidden">
       <div className="absolute w-full ">
         <img src={BG} alt="" width="100%" className="md:h-[949px] h-[670px]" />
       </div>
@@ -41,7 +41,7 @@ export default function Banner() {
             <img
               src={HeroBg}
               alt="Логистика иллюстрация с складом, транспортом и глобальной сетью поставок"
-              className="h-[300px] md:w-[450px] md:h-[450px] xl:w-[600px] xl:h-[600px] 2xl:w-[700px] 2xl:h-[700px] w-[300px] object-cover"
+              className="hidden xl:block h-[300px] md:w-[450px] md:h-[450px] xl:w-[600px] xl:h-[600px] 2xl:w-[700px] 2xl:h-[700px] w-[300px] object-cover"
             />
           </div>
         </div>
