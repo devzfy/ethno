@@ -127,6 +127,7 @@ export default function Gallery() {
                   </svg>
                 </button>
               </div>
+              {/* image */}
               <img
                 src="https://img.youtube.com/vi/iE3bJGgx7E0/hqdefault.jpg"
                 alt=""
