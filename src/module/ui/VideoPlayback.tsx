@@ -4,14 +4,14 @@ import Group from '../../assets/group.png';
 export default function VideoPlayback() {
   return (
     <div>
-      <div className="mt-[170px]">
+      <div className="mt-[50px] md:mt-[170px]">
         <div className="flex justify-center flex-col items-center">
           <p className="font-bold xl:text-xl text-sm font-primary xl:max-w-[762px] md:max-w-[590px] text-center mb-[50px] md:mb-[44px] xl:mb-[50px]">
             Посмотрите видео, в котором рассказываем про реальные зарплаты
             логистов и процесс работы на фрилансе
           </p>
           <a
-            href="https://www.youtube.com/watch?v=pA6KFGgOgtk&t=23s"
+            href="https://www.youtube.com/watch?v=pA6KFGgOgtk&t"
             target="_blank"
             rel="noreferrer"
           >

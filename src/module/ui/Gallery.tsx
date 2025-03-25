@@ -98,7 +98,7 @@ export default function Gallery() {
                 </button>
               </div>
               <img
-                src="https://img.youtube.com/vi/_wF18D2HPHY/hqdefault.jpg"
+                src="https://img.youtube.com/vi/_wF18D2HPHY/maxresdefault.jpg"
                 alt=""
                 width="100%"
                 height="100%"
@@ -129,7 +129,7 @@ export default function Gallery() {
               </div>
               {/* image */}
               <img
-                src="https://img.youtube.com/vi/iE3bJGgx7E0/hqdefault.jpg"
+                src="https://img.youtube.com/vi/iE3bJGgx7E0/maxresdefault.jpg"
                 alt=""
                 width="100%"
                 height="100%"
@@ -159,7 +159,7 @@ export default function Gallery() {
                 </button>
               </div>
               <img
-                src="https://img.youtube.com/vi/nhpJdYGm34g/hqdefault.jpg"
+                src="https://img.youtube.com/vi/nhpJdYGm34g/maxresdefault.jpg"
                 alt=""
                 width="100%"
                 height="100%"
@@ -191,7 +191,7 @@ export default function Gallery() {
                 </button>
               </div>
               <img
-                src="https://img.youtube.com/vi/reNyYJ0E704/hqdefault.jpg"
+                src="https://img.youtube.com/vi/reNyYJ0E704/maxresdefault.jpg"
                 alt=""
                 width="100%"
                 height="100%"
@@ -221,7 +221,7 @@ export default function Gallery() {
                 </button>
               </div>
               <img
-                src="https://img.youtube.com/vi/sIyA61jo81s/hqdefault.jpg"
+                src="https://img.youtube.com/vi/sIyA61jo81s/maxresdefault.jpg"
                 alt=""
                 width="100%"
                 height="100%"
@@ -251,7 +251,7 @@ export default function Gallery() {
                 </button>
               </div>
               <img
-                src="https://img.youtube.com/vi/EV_PwSOGfa4/hqdefault.jpg"
+                src="https://img.youtube.com/vi/EV_PwSOGfa4/maxresdefault.jpg"
                 alt=""
                 width="100%"
                 height="100%"
@@ -283,7 +283,7 @@ export default function Gallery() {
                 </button>
               </div>
               <img
-                src="https://img.youtube.com/vi/6lWALl8K3DU/hqdefault.jpg"
+                src="https://img.youtube.com/vi/6lWALl8K3DU/maxresdefault.jpg"
                 alt=""
                 width="100%"
                 height="100%"
@@ -313,7 +313,7 @@ export default function Gallery() {
                 </button>
               </div>
               <img
-                src="https://img.youtube.com/vi/5CvUaOKekns/hqdefault.jpg"
+                src="https://img.youtube.com/vi/5CvUaOKekns/maxresdefault.jpg"
                 alt=""
                 width="100%"
                 height="100%"
@@ -343,7 +343,7 @@ export default function Gallery() {
                 </button>
               </div>
               <img
-                src="https://img.youtube.com/vi/Ocu6ZQ2EVnk/hqdefault.jpg"
+                src="https://img.youtube.com/vi/Ocu6ZQ2EVnk/maxresdefault.jpg"
                 alt=""
                 width="100%"
                 height="100%"

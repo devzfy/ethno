@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { useSendTestResults } from '../module/hooks/useSendTestResult';
 import { CloseButton } from '../assets/icons';
-import Mohina from '../assets/mohina.webp';
+import Mohina from '../assets/mohina.png';
 
 type FormValues = {
   answers: { value: string; additionalValue?: string }[];
