@@ -61,10 +61,9 @@ export default function ContactMap() {
                   <p className="text-white font-normal xl:text-[22px] font-primary text-[15px]">
                     2 Филиал -
                     <span className="font-normal font-primary">
-                      Улица Мукуми 40,
+                      Улица Мукуми 40, город Андижан
                     </span>
                   </p>
-                  <p className="text-gray-300">город Андижан</p>
                 </div>
               </div>
             </div>
