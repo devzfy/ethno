@@ -33,7 +33,7 @@ export default function ContactMap() {
                   </svg>
                 </div>
                 <div>
-                  <a href='https://maps.app.goo.gl/7pQUcWQt2UeViUbh7' target='_blank' className="inline-block text-white font-normal xl:text-[22px] font-primary text-[15px]">
+                  <a href='https://yandex.ru/maps/-/CHF1NOmG' target='_blank' className="inline-block text-white font-normal xl:text-[22px] font-primary text-[15px]">
                     1 Филиал -{' '}
                     <span className="font-normal font-primary">
                       Улица Мукуми 142/1, Чиланзарский район, город Ташкент
