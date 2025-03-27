@@ -197,7 +197,7 @@ export default function QuizComponent({ onClose }: Props) {
   // Show results page
   if (showResults) {
     return (
-      <div className="w-full  z-[9999] h-screen flex justify-center items-center fixed top-0 left-0 z-50 bg-[#41414199] backdrop-blur-[10px]">
+      <div className="w-full  z-[9999] h-screen flex justify-center items-center fixed top-0 left-0  bg-[#41414199] backdrop-blur-[10px]">
         <div className="relative mx-auto bg-[#141414] rounded-[30px] overflow-hidden  w-[95%] max-h-[420px] md:w-[860px] h-full md:max-h-[590px]  box-border">
           <button
             onClick={onClose}
@@ -244,7 +244,7 @@ export default function QuizComponent({ onClose }: Props) {
 
   // Show quiz questions
   return (
-    <div className="w-full  z-[9999] h-screen flex justify-center items-center fixed top-0 left-0 z-50 bg-[#41414199] backdrop-blur-[10px]">
+    <div className="w-full  z-[9999] h-screen flex justify-center items-center fixed top-0 left-0 bg-[#41414199] backdrop-blur-[10px]">
       <div className="md:w-[90%] relative w-[95%] xl:w-[890px] rounded-[30px] overflow-hidden bg-white  box-border md:px-[70px] md:pt-[70px] md:pb-[50px] px-[30px] pt-[30px] pb-[20px]">
         <button
           onClick={onClose}
