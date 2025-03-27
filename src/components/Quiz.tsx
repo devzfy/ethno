@@ -141,7 +141,7 @@ export default function QuizComponent({ onClose }: Props) {
 
   // Welcome page component
   const WelcomePage = () => (
-    <div className="w-full h-screen flex justify-center items-center fixed top-0 left-0 z-50 bg-[#41414199] backdrop-blur-[10px]">
+    <div className="w-full z-[9999] h-screen flex justify-center items-center fixed top-0 left-0  bg-[#41414199] backdrop-blur-[10px]">
       <div className="relative  max-w-[95%] max-h-[390px] mx-auto bg-[#141414] rounded-[16px] md:rounded-[30px] overflow-hidden  md:max-w-[700px] md:max-h-[500px] xl:w-[860px] h-full xl:max-h-[590px]  xl:pr-10 xl:pl-[80px] xl:pt-[80px] md:pt-[50px] md:pl-[50px] md:pr-[30px] pb-[50px] box-border pt-[30px] pl-[30px] pr-[20px]">
         <button
           onClick={onClose}
@@ -197,7 +197,7 @@ export default function QuizComponent({ onClose }: Props) {
   // Show results page
   if (showResults) {
     return (
-      <div className="w-full h-screen flex justify-center items-center fixed top-0 left-0 z-50 bg-[#41414199] backdrop-blur-[10px]">
+      <div className="w-full  z-[9999] h-screen flex justify-center items-center fixed top-0 left-0 z-50 bg-[#41414199] backdrop-blur-[10px]">
         <div className="relative mx-auto bg-[#141414] rounded-[30px] overflow-hidden  w-[95%] max-h-[420px] md:w-[860px] h-full md:max-h-[590px]  box-border">
           <button
             onClick={onClose}
@@ -244,7 +244,7 @@ export default function QuizComponent({ onClose }: Props) {
 
   // Show quiz questions
   return (
-    <div className="w-full h-screen flex justify-center items-center fixed top-0 left-0 z-50 bg-[#41414199] backdrop-blur-[10px]">
+    <div className="w-full  z-[9999] h-screen flex justify-center items-center fixed top-0 left-0 z-50 bg-[#41414199] backdrop-blur-[10px]">
       <div className="md:w-[90%] relative w-[95%] xl:w-[890px] rounded-[30px] overflow-hidden bg-white  box-border md:px-[70px] md:pt-[70px] md:pb-[50px] px-[30px] pt-[30px] pb-[20px]">
         <button
           onClick={onClose}

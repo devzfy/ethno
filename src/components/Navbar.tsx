@@ -16,7 +16,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="bg-[#232323] xl:py-4 py-2.5 sticky top-0 z-[9999] w-full">
+    <div className="bg-[#232323] xl:py-4 py-2.5 sticky top-0 z-[9000] w-full">
       <div className="container-secondary mx-auto px-4 flex justify-between items-center">
         <div className="flex xl:gap-20 2xl:gap-[131px] items-center">
           <a href="#">
