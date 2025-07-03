@@ -1,5 +1,5 @@
 'use client';
-import Mohina from '../../assets/mohina.webp';
+import Mohina from '../../assets/mohina.png';
 
 import BG4 from '../../assets/bg4.png';
 export default function ConsultationRequest() {
@@ -33,7 +33,7 @@ export default function ConsultationRequest() {
             {/* Chat bubble */}
             <div className="md:absolute xl:w-[462px] md:w-[338px] bg-[#F1F1F1] xl:px-10 xl:py-[30px] xl:right-30 md:right-10 md:-bottom-[148px] xl:rounded-bl-[30px] xl:rounded-br-[30px] xl:rounded-tl-[30px] md:rounded-bl-[18px] md:rounded-br-[18px] md:rounded-tl-[18px] rounded-bl-[16px] rounded-br-[16px] rounded-tl-[16px] xl:-bottom-10 p-[30px] ">
               <h3 className="font-semibold xl:text-xl text-lg md:text-[16px] text-[#252323] font-primary xl:mb-2">
-                Мохина
+                Камилла
               </h3>
               <p className="text-[#252323] xl:text-xl text-sm font-primary font-medium">
                 Привет! Я менеджер отдела заботы Logist Academy. Напишите мне,

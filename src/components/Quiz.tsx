@@ -177,7 +177,7 @@ export default function QuizComponent({ onClose }: Props) {
             </div>
             <div className="absolute rounded-b-[16px] md:rounded-b-[30px] md:right-20 md:top-28 right-10 top-20  rounded-tl-[18px] md:rounded-tl-[30px] p-5 md:p-[30px] bg-white ">
               <span className="block md:mb-2 mb-1 font-semibold font-primary text-[15px] text-[#252323]">
-                Мохина
+                Камилла
               </span>
               <p className="block md:w-[362px] w-[250px] font-primary  box-border font-semibold font-primary text-[12px] md:text-[15px] text-[#252323]">
                 Прохождение теста займет всего пару минут! Ответьте на вопросы,
