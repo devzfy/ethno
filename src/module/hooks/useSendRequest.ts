@@ -20,7 +20,16 @@ export const useSendRequest = () => {
 💬 *Комментарий*: ${values.comment}`,
           }
         )
-        .then(res => res),
+        .then(() =>
+          enqueueSnackbar('Успешно отправлено!', {
+            variant: 'success',
+            anchorOrigin: {
+              vertical: 'bottom',
+              horizontal: 'left',
+            },
+            autoHideDuration: 2000,
+          })
+        ),
     onSuccess: () =>
       enqueueSnackbar('Успешно отправлено!', {
         variant: 'success',
